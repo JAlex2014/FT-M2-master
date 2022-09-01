@@ -14,7 +14,7 @@
 ### Descripción
 
 A partir de una paǵina que simula una noticia sobre _Música 8D_ es necesario terminar la parte de la barra de navegación y el header como así también agregar los estlilos necesarios para que se vea agradable en un teléfono celular. El resultado final debeŕia ser el siguiente:
-
+ 
 [Diseño Desktop](responsive-web/diseño/home-desktop.png)
 
 [Diseño Mobile](responsive-web/diseño/home-mobile.png)
