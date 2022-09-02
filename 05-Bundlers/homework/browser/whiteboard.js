@@ -1,7 +1,19 @@
-(function () {
+//(function () {
 
-  window.whiteboard = new window.EventEmitter();
 
+/////////////////////////////////////////////////////////////////
+  //De la forma como se haría con ES6
+  // import {EventEmitter}  from './event-emitter.js'; se define con llaves
+  // porque anteriormente se exportó sin el DEFAULT
+  // export var whiteboard = new EventEmitter();
+ /////////////////////////////////////////////////////////////////
+
+  var EventEmitter = require('./event-emitter');
+  var whiteboard = new EventEmitter();
+  //window.whiteboard = new window.EventEmitter();//viene de event-emitter.js
+                                                //EXPORTANDO WHITEBOARD.JS
+
+                                               
   // Ultimately, the color of our stroke;
   var color;
 
@@ -113,4 +125,5 @@
 
   };
 
-})();
+  module.exports = whiteboard;
+//})();

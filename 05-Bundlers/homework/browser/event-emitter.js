@@ -1,6 +1,12 @@
-(function () {
+//(function () {
 
-  window.EventEmitter = EventEmitter;
+  //window.EventEmitter = EventEmitter; //LO QUE ESTAMOS EXPORTANDO
+
+  /////////////////////////////////////////////////////////////////
+  //De la forma como se haría con ES6
+  //export function EventEmitter () {
+  // this.subscribers = {};
+  //}
 
   // our EventEmitter constructor function
   function EventEmitter () {
@@ -43,4 +49,5 @@
 
   };
 
-})();
+  module.exports = EventEmitter;
+//})();
