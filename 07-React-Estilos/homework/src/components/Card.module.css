@@ -1,0 +1,44 @@
+.cardcontainer{
+    background: beige;
+    opacity: 0.70;
+    color: black;
+    border-radius: 10px;
+    border-color: beige;
+    border-style: groove;
+    width: 180px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.cardcontainer:hover{
+    background: white;
+    }
+  
+
+.img{
+    background-color: gray;
+    background-size: contain;
+    margin-top: 10px;
+}
+
+.btn{
+    background-color: black; 
+    color: white;
+    width: 25px;
+    border-radius: 10px;
+    margin: 5px;
+    align-self: flex-end;
+}
+
+.App{
+    background-color: black;
+    background-image: url("https://365enfoques.com/wp-content/uploads/2015/05/hacer-fotos-a-la-luna.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-size: contain;
+}
