@@ -14,7 +14,9 @@
     align-content: center;
 }
 .cardcontainer:hover{
-    background: white;
+    background: black;
+    color: white;
+    transition: 0.7s;
     }
   
 
@@ -25,7 +27,7 @@
 }
 
 .btn{
-    background-color: black; 
+    background-color: rgb(176, 42, 42); 
     color: white;
     width: 25px;
     border-radius: 10px;
@@ -39,6 +41,5 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
     background-size: contain;
 }
