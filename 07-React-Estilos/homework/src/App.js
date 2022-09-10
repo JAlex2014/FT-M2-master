@@ -3,6 +3,9 @@ import './App.css';
 import axios from 'axios';
 import Cards from './components/Cards.jsx';
 import Nav from './components/Nav.jsx';
+import {Route} from 'react-router-dom';
+import About from './components/About.jsx';
+import Ciudad from './components/Ciudad.jsx';
 
 function App(){
   const [cities, setCities] = useState([]);//inicializo cities en []
@@ -24,8 +27,14 @@ function App(){
 
   return (
     <div className='App'>
-      <Nav onSearch={onSearch}/>
-      <Cards cities={cities} onClose={onClose}/>
+      <Route path ='/' render={()=> <Nav onSearch={onSearch}/>}/>
+      <Route path='/about' component={About}/>
+      <Route exact path ='/'render={()=><Cards cities={cities} onClose={onClose}/>}/>
+      <Route exact path='/ciudad/:ciudadId' render={({match})=><Ciudad 
+      ciudad={cities.filter(
+        (city => city.id === parseInt(match.params.ciudadId)))[0]}
+      />}
+      />
     </div>
   );
 }

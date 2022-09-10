@@ -1,12 +1,15 @@
 import React from 'react';
-import style1 from './Card.module.css'
+import style1 from './Card.module.css';
+import {Link} from 'react-router-dom';
 
 export default function Card(props) {
   // acá va tu código
   return(
     <div className={style1.cardcontainer}>
       <button onClick={props.onClose} className={style1.btn}>X</button>
-      <h4>{props.name}</h4>
+      <Link to={`/ciudad/${props.id}`}>
+        <h4 className="card-title">{props.name}</h4>
+      </Link>
       <div>T.max: {props.max} °C</div>
       <div>T.min: {props.min} °C</div>
       <div>Wind speed: {props.wind} km/h</div>

@@ -12,6 +12,7 @@ export default function Cards({cities, onClose}) {
       {
         cities.map(ciudad=>
          <Card 
+          id={ciudad.id}
           key={ciudad.id}
           max={ciudad.main.temp_max}
           min={ciudad.main.temp_min}
